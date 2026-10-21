@@ -32,7 +32,26 @@
 
 // PART 6 — DISPLAY ON THE WEBPAGE
 // TODO: Uncomment and complete the line below once your story variable exists.
-// document.getElementById("madlib-output").innerHTML = story;
 
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
+
+let name1 = prompt("Give a name!");
+let country1 = prompt ("Give me a country!");
+let adj1 = prompt("Give me an adjective!");
+let stolenItem = prompt("Give me an item!");
+let num1 = Number(prompt("Give me a number! (DONT SAY 67)"));
+let time = prompt("Give a time of day");
+
+let name2 = prompt ("Give me another name!")
+let years1 = prompt("Give me an amount of year!")
+let hidingspot = prompt("Give me a super random hiding spot!")
+let transportation = prompt("Give me a fun type of transportation!")
+let money =Number(prompt("Give me an amount of money!"))
+
+// story starts
+let myStory = `${name1} was a CIA agent who went to the ${country1} to steal ${adj1} ${stolenItem}. He stole ${num1**2} ${stolenItem}s at ${time}. ${name1}'s accomplice was ${name2} whom he had known for ${years1 * 10} years. Eventually, the cops arrived and they had to hide in ${hidingspot}. After the cops left, they escape on a ${transportation}, heading back to base. They turn in the ${stolenitem} to the government in exchange for money and they split, so both of them got $${money/2}. They celebrated at a candy store and was left with $${money%2}`;
+
+// story ends
+
+document.getElementById("madlib-output").innerHTML = story;
